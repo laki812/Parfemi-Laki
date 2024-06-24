@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Prodaja parfema</title>	
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="styles.css"> 
+<link rel="shortcut icon" href="slikalogoa.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="pozadinaa10">
+
+<div class="loggo10">
+<a href="index.html" >
+<img src="slike/logo.png" alt="svidjanje">
+</a>
+</div>
+
+
+<div class="loginMeni10">
+
+<div class="prijaviSe10">
+<p>PRODAVAC</p>
+</div>
+<div class="nalogIDugmad10">
+<div class="nalogg10">
+
+<div class="gmaill10">
+<input type="text" id="username" name="ime" placeholder="Gmail">
+</div>
+
+<div class="lozinkaa10">
+<input type="password" id="password" name="ime" placeholder="Lozinka">
+</div>
+
+
+	<button onclick="checkLogin()" class="loginIRegister10">
+	<p id="message">ULOGUJ SE</p>
+	</button>
+
+
+
+</div>
+
+
+	
+
+</div>
+</div>
+
+
+<div class="pozadinaDrvo">
+ <video autoplay loop muted plays-inline class="videoreprodukcija">
+    
+	<source src="slike/video6.mp4" type="video/mp4">
+  </video>
+</div>
+
+
+
+</div>
+</body>
+
+    <script>
+	///provera
+function checkLogin() {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  var message = document.getElementById("message");
+
+  if (username === "prodavac@gmail.com" && password === "123") {
+    window.location.href = "prodavacakauntkupaca.html";
+  } else {
+    message.textContent = "Pogrešno korisničko ime ili lozinka.";
+  }
+}
+
+
+	</script>
+	
+</html>

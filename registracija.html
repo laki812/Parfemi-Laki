@@ -1,0 +1,167 @@
+<html>
+<head>
+<title>Prodaja parfema</title>	
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="styles.css"> 
+<link rel="shortcut icon" href="slikalogoa.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="pozadinaa3">
+
+
+<div class="loggo">
+<a href="index.html" >
+<img src="slike/logo.png" alt="svidjanje">
+</a>
+</div>
+
+
+<div id="error-message" style="color: red; display: none;">Lozinke se ne podudaraju!</div>
+
+
+<div class="loginMeni3">
+
+<div class="prijaviSe2">
+<p>REGISTRUJ SE</p>
+</div>
+<div class="nalogIDugmad">
+<div class="nalogg1">
+
+<div class="imee1">
+<input id="ime10" type="text" id="ime1" name="ime" placeholder="Ime">
+</div>
+
+<div class="prezimee">
+<input id="prezime10" type="text" id="ime2" name="ime" placeholder="Prezime">
+</div>
+
+<div class="datumRodjenja">
+<input id="datumrod10" type="text" id="ime3" name="ime" placeholder="Datum rođenja">
+</div>
+
+<div class="Pol">
+<input id="pol10" type="text" id="ime4" name="ime" placeholder="Pol">
+</div>
+
+<div class="gmaill1">
+<input id="gmail10" type="text" id="ime5" name="ime" placeholder="Gmail">
+</div>
+
+<div class="lozinkaa1">
+<input id="lozinka10" type="password" id="ime6" name="ime" placeholder="Lozinka">
+</div>
+
+<div class="ponoviLozinkaa">
+<input id="ponoviloz10" type="password" id="ime7" name="ime" placeholder="Ponovi lozinku">
+</div>
+
+<div class="adresa">
+<input id="drzava10" type="text" id="ime8" name="ime" placeholder="Država, Grad, Ulica i Broj" >
+</div>
+
+<div class="drzava">
+<input id="brojtelefona" type="text" id="ime9" name="ime" placeholder="Broj Telefona">
+</div>
+
+
+
+
+</div>
+
+<div class="linija1">
+</div>
+
+
+<div class="dugmadii2">
+	
+    <button onclick="registracijaRegistracija()" class="loginIRegister1">
+	<p>REGISTRUJ SE</p>
+	</button>
+
+	<a href="login.html" >
+	<button onclick="registracijaLogin()" class="loginIRegister1" >
+	<p>ULOGUJ SE</p>
+	</button>
+	</a>
+	
+</div> 
+
+</div>
+</div>
+
+
+
+<div class="pozadinaDrvo">
+ <video autoplay loop muted plays-inline class="videoreprodukcija">
+    
+	<source src="slike/drugivideo.mp4" type="video/mp4">
+  </video>
+</div>
+
+
+
+</div>
+</body>
+
+    <script>
+	
+	////////provera polja i preusmeravanje na drugu stranicu
+	
+function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+
+function getInputValue(id) {
+    return document.getElementById(id).value;
+}
+
+function registracijaRegistracija() {
+    var ime = getInputValue('ime10');
+    var prezime = getInputValue('prezime10');
+    var datumRodjenja = getInputValue('datumrod10');
+    var pol = getInputValue('pol10');
+    var gmail = getInputValue('gmail10');
+    var lozinka = getInputValue('lozinka10');
+    var ponoviLozinku = getInputValue('ponoviloz10');
+    var adresa = getInputValue('drzava10');
+    var brojTelefona = getInputValue('brojtelefona');
+
+    if (ime === "" || prezime === "" || datumRodjenja === "" || pol === "" || gmail === "" || lozinka === "" || ponoviLozinku === "" || adresa === "" || brojTelefona === "") {
+        alert("Sva polja moraju biti popunjena.");
+        return;
+    }
+
+    if (lozinka !== ponoviLozinku) {
+        alert("Lozinke se ne podudaraju.");
+        return;
+    }
+
+    setCookie('ime', ime, 7);
+    setCookie('prezime', prezime, 7);
+    setCookie('datumrod', datumRodjenja, 7);
+    setCookie('pol', pol, 7);
+    setCookie('gmail', gmail, 7);
+    setCookie('lozinka', lozinka, 7);
+    setCookie('drzava', adresa, 7);
+    setCookie('brojtelefona', brojTelefona, 7);
+
+   
+    window.location.href = 'kupac.html';
+}
+
+
+	</script>
+</html>

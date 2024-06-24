@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>Prodaja parfema</title>	
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="styles.css"> 
+<link rel="shortcut icon" href="slikalogoa.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="pozadinaa3">
+
+
+<div class="loggo">
+<a href="index.html" >
+<img src="slike/logo.png" alt="svidjanje">
+</a>
+</div>
+
+
+<div class="lozinkaa111">
+<input type="text" id="polozinka" name="polozinka" placeholder="Lozinka">
+</div>
+
+
+<div class="loginMeni2">
+
+<div class="prijaviSe1">
+<p>PRIJAVI SE</p>
+</div>
+<div class="nalogIDugmad">
+<div class="nalogg">
+
+<div class="imee">
+<input type="text" id="ime" name="ime" placeholder="Ime">
+</div>
+
+<div class="gmaill">
+<input type="text" id="ime" name="ime" placeholder="Gmail">
+</div>
+
+<div class="lozinkaa">
+<input type="password" id="potvrdaLozinka" name="potvrdaLozinka" placeholder="Lozinka">
+</div>
+
+</div>
+
+<div class="linija">
+</div>
+
+
+<div class="dugmadii">
+
+	<button onclick="ulogovanje()" class="loginIRegister">
+	<p>ULOGUJ SE</p>
+	</button>
+
+	<a href="registracija.html" >
+	<button onclick="claimOffer2()" class="loginIRegister" >
+	<p>REGISTRUJ SE</p>
+	</button>
+	</a>
+
+</div> 
+
+</div>
+</div>
+
+
+
+<div class="pozadinaDrvo">
+ <video autoplay loop muted plays-inline class="videoreprodukcija">
+    
+	<source src="slike/drugivideo.mp4" type="video/mp4">
+  </video>
+</div>
+
+
+
+</div>
+</body>
+
+    <script>
+
+	/////////popunjenost polja i prikaz njihov
+function ulogovanje() {
+    var ime = document.getElementById("ime").value;
+    var gmail = document.getElementById("ime").value;
+    var lozinka = document.getElementById("potvrdaLozinka").value;
+
+    if (!ime || !gmail || !lozinka || !potvrdaLozinka) {
+        alert("Sva polja moraju biti popunjena!");
+        return;
+    }
+
+}
+
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+}
+
+window.onload = function() {
+    const ime = getCookie('ime');
+    const gmail = getCookie('gmail');
+    const lozinka = getCookie('lozinka');
+
+    if (ime) {
+        document.querySelector('.imee input').value = ime;
+    }
+
+    if (gmail) {
+        document.querySelector('.gmaill input').value = gmail;
+    }
+
+    if (lozinka) {
+        document.querySelector('.lozinkaa111 input').value = lozinka;
+    }
+
+
+
+    const queryParams = new URLSearchParams(window.location.search);
+    const error = queryParams.get('error');
+
+
+}
+
+
+
+
+		
+		
+
+
+	
+	</script>
+</html>

@@ -1,0 +1,798 @@
+<html>
+<head>
+<title>Prodaja parfema</title>	
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="styles.css"> 
+<link rel="shortcut icon" href="slikalogoa.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+<div id="pozadina">
+
+
+
+<div class="popup" id="popup1">
+  <div class="popup2">
+    <span class="zatvori" onclick="closePopup()">×</span>
+    <p>NE PROPUSTITE AKCIJE</p>
+    <p></p>
+	<a href="prazniproizvodi.html" >
+    <button onclick="claimOffer()"><p id="dugmeAkcija">AKCIJE</p></button>
+	</a>
+  </div>
+</div>
+
+
+
+
+<div class="gornjideo1">
+<div class="meni">
+
+  <div class="meni2"> </div>
+  <div class="padajucimeni">
+<a href="index.html" >Početna</a>
+<a href="proizvodi.html">Brendovi</a>
+<a href="prazniproizvodi.html">Muški parfemi</a>
+<a href="prazniproizvodi.html">Ženski parfemi</a>
+<a href="prazniproizvodi.html">Akcije</a>
+<a href="prodavaclogin.html">Prodavac</a>
+  </div>
+</div>
+
+<div class="dugmadipretraga">
+ <form action="">
+        <input id="searchInput"  type="search" placeholder="Search here ...">
+        <i class="fa fa-search"></i>
+    </form>
+<div class="dugmadi">
+<a href="svidjanje.html" onmouseover="prikaziSvidjanje()">
+<div class="dugme">
+<img src="slike/srce.png" alt="logo">
+</div>
+</a>
+<div class="prikazsvidjanje" id="prikazSvidjanje">
+    <button onclick="claimOffer2()" id="closedugme" >X</button>
+	<p id="nazivSvidjanje12345"> SVIĐANJE </p>
+	<div class="korpadugme">
+	</div>
+</div>
+<a href="korpa.html" onmouseover="prikaziSvidjanje2()">
+<div class="dugme">
+<img src="slike/shop.png" alt="logo">
+</div>
+</a>
+<div class="prikazsvidjanje2" id="prikazSvidjanje2">
+    <button onclick="claimOffer2()" id="closedugme" >X</button>
+	<p> KORPA </p>
+	<div class="korpadugme2">
+	</div>
+</div>
+<a href="kupac.html" onmouseover="prikaziSvidjanje3()">>
+<div class="dugme">
+<img src="slike/user.png" alt="logo">
+</div>
+</a>
+<div class="prikazsvidjanje3" id="prikazSvidjanje3">
+    <button onclick="claimOffer2()" id="closedugme" >X</button>
+	<p> PRIJAVI/KREIRAJ<br>SVOJ NALOG </p>
+	<a href="login.html" >
+	<button onclick="claimOffer()" id="prijava123">PRIJAVI SE</button>
+	</a>
+	<a href="registracija.html" >
+	<button onclick="claimOffer()" id="registracija123" >REGISTRUJ SE</button>
+	</a>
+</div>
+<div class="smanjenje">
+<button id="povecajText"><</button>
+<button id="smanjiText">></button>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="pozadinaDrvo">
+ <video autoplay loop muted plays-inline class="videoreprodukcija">
+    
+	<source src="slike/prvivideo2.mp4" type="video/mp4">
+  </video>
+</div>
+
+
+
+
+
+
+
+
+<div class="pozadinaa">
+
+
+
+<div class="preporucujemo">
+<div class="preporuka">
+<p>PREPORUKA ZA VAS</p>
+</div>
+</div>
+
+     <section class="proizvodi"> 
+        <button class="prev">
+		<img src="slike/arrow.png" alt="">
+		</button>
+        <button class="next">
+		<img src="slike/arrow.png" alt="">
+		</button>
+		
+		
+        <div class="product-container">
+		
+            <div class="proizvod">
+            <div class="nazivProizvod">
+			<p>Paco Rabanne <br> One Million</p>
+			</div>
+			
+			<div class="slikaProizvod1">
+			<a href="prazniproizvodi.html"><img src="slike/1milion.png" alt=""></a>
+            </div>
+		    </div>
+			
+			<div class="proizvod">
+            <div class="nazivProizvod">
+			<p>Gucci <br> Guilty</p>
+			</div>
+			
+			<div class="slikaProizvod1">
+			<a href="prazniproizvodi.html"><img src="slike/gucci.png" alt=""></a>
+            </div>
+		    </div>
+			
+			<div class="proizvod">
+            <div class="nazivProizvod">
+			<p>Carolina Herrera <br> 212 Vip</p>
+			</div>
+			
+			<div class="slikaProizvod1">
+			<a href="212vip.html"><img src="slike/212vip.png" alt=""></a>
+            </div>
+		    </div>
+			
+			<div class="proizvod">
+            <div class="nazivProizvod">
+			<p>Versace <br> Dylan Blue</p>
+			</div>
+			
+			<div class="slikaProizvod1">
+			<a href="prazniproizvodi.html"><img src="slike/vrs.png" alt=""></a>
+            </div>
+		    </div>
+			
+			<div class="proizvod">
+            <div class="nazivProizvod">
+			<p>Creed <br> Aventus</p>
+			</div>
+			
+			<div class="slikaProizvod1">
+			<a href="prazniproizvodi.html"><img src="slike/creed.png" alt=""></a>
+            </div>
+		    </div>
+			
+			
+			<div class="proizvod">
+            <div class="nazivProizvod">
+			<p>Channel <br> No.5</p>
+			</div>
+			
+			<div class="slikaProizvod1">
+			<a href="prazniproizvodi.html"><img src="slike/ChanelNo5.png" alt=""></a>
+            </div>
+		    </div>
+			
+			<div class="proizvod">
+            <div class="nazivProizvod">
+			<p>Gurelain <br> Shalimar</p>
+			</div>
+			
+			<div class="slikaProizvod1">
+			<a href="prazniproizvodi.html"><img src="slike/avif1.png" alt=""></a>
+            </div>
+		    </div>
+			
+			<div class="proizvod">
+            <div class="nazivProizvod">
+			<p>Cristian Dior <br> Poison</p>
+			</div>
+			
+			<div class="slikaProizvod1">
+			<a href="prazniproizvodi.html"><img src="slike/poison.png" alt=""></a>
+            </div>
+		    </div>
+			
+			<div class="proizvod">
+            <div class="nazivProizvod">
+			<p>Nina Ricci <br> L`Air du Temps</p>
+			</div>
+			
+			<div class="slikaProizvod1">
+			<a href="prazniproizvodi.html"><img src="slike/15.png" alt=""></a>
+            </div>
+		    </div>
+			
+			
+			<div class="proizvod">
+            <div class="nazivProizvod">
+			<p>Jean Paul Gaultier <br> Classique</p>
+			</div>
+			
+			<div class="slikaProizvod1">
+			<a href="prazniproizvodi.html"><img src="slike/jpgw.png" alt=""></a>
+            </div>
+		    </div>
+			
+			
+			<div class="proizvod">
+            <div class="nazivProizvod">
+			<p>Vilhelm Parfumerie <br> Dear Polly</p>
+			</div>
+			
+			<div class="slikaProizvod1">
+			<a href="dearpolly.html"><img src="slike/dearpolly.png" alt=""></a>
+            </div>
+		    </div>
+			
+			<div class="proizvod">
+            <div class="nazivProizvod">
+			<p>Byredo <br> Gypsy Water</p>
+			</div>
+			
+			<div class="slikaProizvod1">
+			<a href="prazniproizvodi.html"><img src="slike/gypsy.png" alt=""></a>
+            </div>
+		    </div>
+			
+			
+			<div class="proizvod">
+            <div class="nazivProizvod">
+			<p>Zara <br> Ebony Wood</p>
+			</div>
+			
+			<div class="slikaProizvod1">
+			<a href="prazniproizvodi.html"><img src="slike/zara.png" alt=""></a>
+            </div>
+		    </div>
+			
+			
+			<div class="proizvod">
+            <div class="nazivProizvod">
+			<p>La Labo <br> Santal 33</p>
+			</div>
+			
+			<div class="slikaProizvod1">
+			<a href="prazniproizvodi.html"><img src="slike/16.png" alt=""></a>
+            </div>
+		    </div>
+			
+			<div class="proizvod">
+            <div class="nazivProizvod">
+			<p>Tom Ford <br> Neroli Portofino</p>
+			</div>
+			
+			<div class="slikaProizvod1">
+			<a href="prazniproizvodi.html"><img src="slike/tom.png" alt=""></a>
+            </div>
+		    </div>
+			
+			
+		</div>
+    </section>
+
+
+
+
+<div class="akcije">
+
+<div class="akcija">
+<a href="prazniproizvodi.html">
+<div class="akcijaProizvod1">
+<div class="pozadina4">
+</div>
+<div class="slikaNazivAkija">
+<div class="nazivAkcija">
+<p>CHANNEL <br> BLUE </p>
+</div>
+<div class="slikaAkcija">
+<img src="slike/popust1.png" alt="">
+<div class="posto50">
+<img src="slike/50procenata.png" alt="">
+</div>
+</div>
+</div>
+
+</div>
+</a>
+
+<a href="prazniproizvodi.html">
+<div class="akcijaProizvod2">
+<div class="pozadina5">
+</div>
+<div class="slikaNazivAkija">
+<div class="nazivAkcija">
+<p>VERSACE <br> EROS</p>
+</div>
+<div class="slikaAkcija">
+<img src="slike/popust2.png" alt="">
+<div class="posto50">
+<img src="slike/50procenata.png" alt="">
+</div>
+</div>
+</div>
+
+</div>
+</a>
+
+
+</div>
+
+<div class="akcija">
+<a href="prazniproizvodi.html">
+<div class="akcijaProizvod1">
+<div class="pozadina6">
+</div>
+<div class="slikaNazivAkija">
+<div class="nazivAkcija">
+<p>DOLCE & GABBANA <br> LIGHT BLUE</p>
+</div>
+<div class="slikaAkcija">
+<img src="slike/popust3.png" alt="">
+<div class="posto50">
+<img src="slike/50procenata.png" alt="">
+</div>
+</div>
+</div>
+</div>
+</a>
+<a href="prazniproizvodi.html">
+<div class="akcijaProizvod2">
+
+<div class="pozadina7">
+</div>
+<div class="slikaNazivAkija">
+<div class="nazivAkcija">
+<p> YSL <br> BLACK OPIUM </p>
+</div>
+<div class="slikaAkcija">
+<img src="slike/popust4.png" alt="">
+<div class="posto50">
+<img src="slike/50procenata.png" alt="">
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="kompleti">
+
+<div class="komplet" id="komplet1">
+<div class="pozadina1">
+</div>
+<div class="nazivDugme">
+<div class="nazivKomplet">
+<p>Paco Rabanne <br> Invictus 50ml Gift Set</p>
+</div>
+<div class="dugmeKomplet">
+<a href="prazniproizvodi.html">
+<button class="pregledDugme1">
+<img src="slike/parfum.png" alt="">
+</button>
+</a>
+</div>
+</div>
+<div class="kompletSlika">
+<img src="slike/invictus.png" alt="">
+</div>
+</div>
+
+<div class="komplet" id="komplet2">
+<div class="pozadina2">
+</div>
+<div class="nazivDugme">
+<div class="nazivKomplet">
+<p>Tom Ford <br> Black Orchid</p>
+</div>
+<div class="dugmeKomplet">
+<a href="prazniproizvodi.html">
+<button class="pregledDugme1">
+<img src="slike/parfum.png" alt="">
+</button>
+</a>
+</div>
+</div>
+<div class="kompletSlika">
+<img src="slike/tomzenski.png" alt="">
+</div>
+</div>
+
+<div class="komplet" id="komplet3">
+<div class="pozadina3">
+</div>
+<div class="nazivDugme">
+<div class="nazivKomplet">
+<p>Bvlgari Eau Parfumee <br> au The Vert Set parfum</p>
+</div>
+<div class="dugmeKomplet">
+<a href="prazniproizvodi.html">
+<button class="pregledDugme1">
+<img src="slike/parfum.png" alt="">
+</button>
+</a>
+</div>
+</div>
+<div class="kompletSlika">
+<img src="slike/uskomplet.png" alt="">
+</div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+<div class="footer">
+<div class="placenje">
+<div class="naziviPlacanja">
+<p>NAČINI PLAĆANJA</p>
+</div>
+<div class="banke">
+<div class="bank" id="banka1">
+<img src="slike/card.png" alt="">
+</div>
+<div class="bank" id="banka2">
+<img src="slike/paypal.png" alt="">
+</div>
+<div class="bank" id="banka3">
+<img src="slike/visa.png" alt="">
+</div>
+</div>
+</div>
+<div class="informacije">
+<div class="brojTelefona">
+<p>Kontaktiranje na broj: <a href="tel:013111111"> 013/111-111</a></p>
+</div>
+<div class="gMail">
+<p>G-mail:<a href="mailto:lazarkovac0000@gmail.com"> lazarkovac0000@gmail.com</a></p>
+</div>
+<div class="radnoVreme">
+<p>Radno vreme:8:00<sup>h</sup>-22:00<sup>h</sup></p>
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+</body>
+
+    <script>
+	
+
+	
+	//dugme za smanjivanje i povecanje teksta
+
+
+var elements = document.querySelectorAll("body *");
+var originalSizes = Array.from(elements).map(element => parseFloat(window.getComputedStyle(element).getPropertyValue('font-size')));
+
+document.getElementById("povecajText").addEventListener("click", function() {
+    for(var i = 0; i < elements.length; i++) {
+        var computedStyle = window.getComputedStyle(elements[i]);
+        var currentSize = parseFloat(computedStyle.getPropertyValue('font-size'));
+        if (currentSize < originalSizes[i] + 2) { 
+            elements[i].style.fontSize = (currentSize + 1) + 'px'; 
+        }
+    }
+});
+
+document.getElementById("smanjiText").addEventListener("click", function() {
+    for(var i = 0; i < elements.length; i++) {
+        var computedStyle = window.getComputedStyle(elements[i]);
+        var currentSize = parseFloat(computedStyle.getPropertyValue('font-size'));
+        if (currentSize > originalSizes[i] - 2) { 
+            elements[i].style.fontSize = (currentSize - 1) + 'px'; 
+        }
+    }
+});
+
+	
+//dugmadi za profil, svidjanje i korpu
+
+function sakrijSveSvidjanje() {
+  var divs = document.querySelectorAll(".prikazsvidjanje, .prikazsvidjanje2, .prikazsvidjanje3");
+  divs.forEach(function(div) {
+    div.style.display = "none";
+  });
+}
+
+function prikaziSvidjanje() {
+  sakrijSveSvidjanje();
+  var div = document.getElementById("prikazSvidjanje");
+  div.style.display = "block";
+}
+
+function claimOffer() {
+  sakrijSveSvidjanje();
+}
+
+function prikaziSvidjanje2() {
+  sakrijSveSvidjanje();
+  var div = document.getElementById("prikazSvidjanje2");
+  div.style.display = "block";
+}
+
+function claimOffer1() {
+  sakrijSveSvidjanje();
+}
+
+function prikaziSvidjanje3() {
+  sakrijSveSvidjanje();
+  var div = document.getElementById("prikazSvidjanje3");
+  div.style.display = "block";
+}
+
+function claimOffer2() {
+  sakrijSveSvidjanje();
+}
+
+function sakrijSveSvidjanje() {
+  var divs = document.querySelectorAll(".prikazsvidjanje, .prikazsvidjanje2, .prikazsvidjanje3");
+  divs.forEach(function(div) {
+    div.style.display = "none";
+  });
+}	
+	
+	
+	
+//searchbar
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("searchInput").addEventListener("keypress", function(e) {
+        if (e.key === "Enter") {
+            e.preventDefault(); 
+            let query = document.getElementById("searchInput").value.trim().toLowerCase();
+            
+            switch(query) {
+                case 'versace':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'carolina herrera':
+                    window.location.href = 'carolinaherrera.html';
+                    break;
+                case 'paco rabanne':
+                    window.location.href = 'racorabbana.html';
+                    break;
+                case 'creed':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'chanel':
+                    window.location.href = 'chanelz.html';
+                    break;
+                case 'guerlain':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'dior':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'nina ricci':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'jean paul gaultier':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'vilhelm':
+                    window.location.href = 'velhelm.html';
+                    break;
+                case 'byredo':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'zara':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'le labo':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'tom ford':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'dolce & gabbana':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'ysl':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'bvlgari':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'one million':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'guilty':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case '212 vip':
+                    window.location.href = '212vip.html';
+                    break;
+                case 'dylan blue':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'aventus':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'no. 5':
+                    window.location.href = 'no5.html';
+                    break;
+                case 'shalimar':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'poison':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'l`air du temps':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'classique':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'dear polly':
+                    window.location.href = 'dearpolly.html';
+                    break;
+                case 'gypsy water':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'ebony wood':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'santal 33':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'neroli portofino':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'bleu':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'eros':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'light blue':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'black opium':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'invictus':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'black orchid':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'eau parfumee':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'muški':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'ženski':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'akcije':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                default:
+                    window.location.href = 'prazniproizvodi.html';
+            }
+        }
+    });
+});
+
+
+
+
+
+
+
+//popup
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+    document.getElementById("popup1").style.display = "block";
+    document.getElementById("overlay").style.display = "block";
+  }, 0); 
+});
+
+function closePopup() {
+  document.getElementById("popup1").style.display = "none";
+  document.getElementById("overlay").style.display = "none";
+}
+
+//padajuci meni
+
+document.addEventListener("DOMContentLoaded", function() {
+  const menuIcon = document.querySelector(".meni2");
+  const menuItems = document.querySelector(".padajucimeni");
+
+  menuIcon.addEventListener("click", function() {
+    menuItems.style.display = menuItems.style.display === "none" ? "block" : "none";
+  });
+
+  document.addEventListener("click", function(event) {
+    if (!menuIcon.contains(event.target) && !menuItems.contains(event.target)) {
+      menuItems.style.display = "none";
+    }
+  });
+});
+	
+	
+	//slajder
+
+const productContainers = [...document.querySelectorAll('.product-container')];
+const nxtBtn = [...document.querySelectorAll('.next')];
+const preBtn = [...document.querySelectorAll('.prev')];
+
+productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+	
+	
+	const productContainer = document.getElementById('proizvodi');
+
+productContainer.addEventListener('click', (e) => {
+    const containerWidth = productContainer.offsetWidth;
+    const target = e.target;
+
+    if (target !== productContainer) {
+        const scrollAmount = target.offsetLeft - containerWidth / 2 + target.offsetWidth / 2;
+        productContainer.scrollLeft = scrollAmount;
+    }
+});
+
+})	
+	</script>
+</html>

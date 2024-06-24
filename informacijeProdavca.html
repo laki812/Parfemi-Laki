@@ -1,0 +1,488 @@
+<html>
+<head>
+<title>Prodaja parfema</title>	
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="styles.css"> 
+<link rel="shortcut icon" href="slikalogoa.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="pozadinaa5">
+
+
+
+<div class="gornjideo">
+
+<div id="logo1">
+<a href="index.html">
+<img id="logo2" alt="logo" src="slike/logo.png">
+</a>
+</div>
+
+
+<div class="dugmadipretraga">
+ <form action="">
+        <input id="searchInput"  type="search" placeholder="Search here ...">
+        <i class="fa fa-search"></i>
+    </form>
+<div class="dugmadi">
+<a href="svidjanje.html" onmouseover="prikaziSvidjanje()">
+<div class="dugme">
+<img src="slike/srce.png" alt="logo">
+</div>
+</a>
+<div class="prikazsvidjanje" id="prikazSvidjanje">
+    <button onclick="claimOffer2()" id="closedugme" >X</button>
+	<p> SVIĐANJE </p>
+	<div class="korpadugme">
+	</div>
+</div>
+<a href="korpa.html" onmouseover="prikaziSvidjanje2()">
+<div class="dugme">
+<img src="slike/shop.png" alt="logo">
+</div>
+</a>
+<div class="prikazsvidjanje2" id="prikazSvidjanje2">
+    <button onclick="claimOffer2()" id="closedugme" >X</button>
+	<p> KORPA </p>
+	<div class="korpadugme2">
+	</div>
+</div>
+<a href="kupac.html" onmouseover="prikaziSvidjanje3()">>
+<div class="dugme">
+<img src="slike/user.png" alt="logo">
+</div>
+</a>
+<div class="prikazsvidjanje3" id="prikazSvidjanje3">
+    <button onclick="claimOffer2()" id="closedugme" >X</button>
+	<p> PRIJAVI/KREIRAJ<br>SVOJ NALOG </p>
+	<a href="login.html" >
+	<button onclick="claimOffer()" id="prijava123">PRIJAVI SE</button>
+	</a>
+	<a href="registracija.html" >
+	<button onclick="claimOffer()" id="registracija123" >REGISTRUJ SE</button>
+	</a>
+</div>
+<div class="smanjenje">
+<button id="povecajText"><</button>
+<button id="smanjiText">></button>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+<div class="meni3">
+  <div class="meni4"></div>
+  <div class="glavnimeni5">
+ <a href="index.html" >Početna</a>
+<a href="proizvodi.html">Brendovi</a>
+<a href="prazniproizvodi.html">Muški parfemi</a>
+<a href="prazniproizvodi.html">Ženski parfemi</a>
+<a href="prazniproizvodi.html">Akcije</a>
+  </div>
+</div>
+
+
+<div class="informacijeProdavac">
+
+<div class="meniProdavac">
+
+<a href="prodavacakauntkupaca.html">
+<div class="meniDugmeProdavac">
+<button onclick="claimOffer2()" id="Porudžbine" >Kupci</button>
+</div>
+</a>
+<a href="prodavacdodavanjeporudzbina.html">
+<div class="meniDugmeProdavac">
+<button onclick="claimOffer2()" id="Sviđanja" >Proizvodi</button>
+</div>
+</a>
+<a href="informacijeProdavca.html">
+<div class="meniDugmeProdavac">
+<button onclick="claimOffer2()" id="Sviđanja" >Akaunt</button>
+</div>
+</a>
+</div>
+
+
+<div class="izmenaInformacija1">
+<button onclick="IzmenaDugme10()" id="izmena7" ></button>
+</div>
+
+<div class="podaciProizvoda12">
+<div class="UnosIme1">
+<p>Unesi informacije akaunta:<p>
+ <button onclick="claimOffer50()" id="closedugme10" >X</button>
+ <div class="podatakk11">
+ <input type="text" id="imeProdavac" name="ime" placeholder="Naziv">
+ </div>
+ <div class="podatakk11">
+ <input type="text" id="przimeProdavac" name="ime" placeholder="Prezime">
+ </div>
+ <div class="podatakk11">
+ <input type="text" id="brojtelProdavac" name="ime" placeholder="Broj telefona">
+ </div>
+ <div class="podatakk11">
+ <input type="text" id="dgubProdavac" name="ime" placeholder="Država, grad, ulica i broj">
+ </div>
+ <div class="podatakk11">
+ <input type="text" id="polProdavac" name="ime" placeholder="Pol">
+ </div>
+ <div class="podatakk11">
+ <input type="text" id="datumrodProdavac" name="ime" placeholder="Datum rođena">
+ </div>
+</div>
+<div class="dugmeZaDodavanje1">
+<button id="dugmeZadodavanjeVrednosti" onclick="prebacivanjeProdavac">Dodaj</button>
+</div>
+</div>
+
+<div class="podaciProdavac">
+
+
+<div class="podatakk1">
+<p id="ime1000"></p>
+</div>
+<div class="podatakk1">
+<p id="prezime1000"></p>
+</div>
+<div class="podatakk1">
+<p id="gmail1000">prodavac@gmail.com</p>
+</div>
+<div class="podatakk1">
+<p id="brojtel1000"></p>
+</div>
+<div class="podatakk1">
+<p id="dgub1000"></p>
+</div>
+<div class="podatakk1">
+<p id="pol1000"></p>
+</div>
+<div class="podatakk1">
+<p id="lozinka1000">***</p>
+</div>
+<div class="podatakk1">
+<p id="datumrod1000"></p>
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+<div class="footer2">
+<div class="placenje">
+<div class="naziviPlacanja">
+<p>NAČINI PLAĆANJA</p>
+</div>
+<div class="banke">
+<div class="bank" id="banka1">
+<img src="slike/card.png" alt="">
+</div>
+<div class="bank" id="banka2">
+<img src="slike/paypal.png" alt="">
+</div>
+<div class="bank" id="banka3">
+<img src="slike/visa.png" alt="">
+</div>
+</div>
+</div>
+<div class="informacije">
+<div class="brojTelefona">
+<p>Kontaktiranje na broj: <a href="tel:013111111"> 013/111-111</a></p>
+</div>
+<div class="gMail">
+<p>G-mail:<a href="mailto:lazarkovac0000@gmail.com"> lazarkovac0000@gmail.com</a></p>
+</div>
+<div class="radnoVreme">
+<p>Radno vreme:8:00<sup>h</sup>-22:00<sup>h</sup></p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+
+</body>
+
+
+    <script>
+	
+	
+		//dugme za smanjivanje i povecanje teksta
+
+
+var elements = document.querySelectorAll("body *");
+var originalSizes = Array.from(elements).map(element => parseFloat(window.getComputedStyle(element).getPropertyValue('font-size')));
+
+document.getElementById("povecajText").addEventListener("click", function() {
+    for(var i = 0; i < elements.length; i++) {
+        var computedStyle = window.getComputedStyle(elements[i]);
+        var currentSize = parseFloat(computedStyle.getPropertyValue('font-size'));
+        if (currentSize < originalSizes[i] + 2) { 
+            elements[i].style.fontSize = (currentSize + 1) + 'px'; 
+        }
+    }
+});
+
+document.getElementById("smanjiText").addEventListener("click", function() {
+    for(var i = 0; i < elements.length; i++) {
+        var computedStyle = window.getComputedStyle(elements[i]);
+        var currentSize = parseFloat(computedStyle.getPropertyValue('font-size'));
+        if (currentSize > originalSizes[i] - 2) { 
+            elements[i].style.fontSize = (currentSize - 1) + 'px'; 
+        }
+    }
+});
+
+	
+//dugmadi za profil, svidjanje i korpu
+
+function sakrijSveSvidjanje() {
+  var divs = document.querySelectorAll(".prikazsvidjanje, .prikazsvidjanje2, .prikazsvidjanje3");
+  divs.forEach(function(div) {
+    div.style.display = "none";
+  });
+}
+
+function prikaziSvidjanje() {
+  sakrijSveSvidjanje();
+  var div = document.getElementById("prikazSvidjanje");
+  div.style.display = "block";
+}
+
+function claimOffer() {
+  sakrijSveSvidjanje();
+}
+
+function prikaziSvidjanje2() {
+  sakrijSveSvidjanje();
+  var div = document.getElementById("prikazSvidjanje2");
+  div.style.display = "block";
+}
+
+function claimOffer1() {
+  sakrijSveSvidjanje();
+}
+
+function prikaziSvidjanje3() {
+  sakrijSveSvidjanje();
+  var div = document.getElementById("prikazSvidjanje3");
+  div.style.display = "block";
+}
+
+function claimOffer2() {
+  sakrijSveSvidjanje();
+}
+
+function sakrijSveSvidjanje() {
+  var divs = document.querySelectorAll(".prikazsvidjanje, .prikazsvidjanje2, .prikazsvidjanje3");
+  divs.forEach(function(div) {
+    div.style.display = "none";
+  });
+}	
+	
+	
+	
+//searchbar
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("searchInput").addEventListener("keypress", function(e) {
+        if (e.key === "Enter") {
+            e.preventDefault(); 
+            let query = document.getElementById("searchInput").value.trim().toLowerCase();
+            
+            switch(query) {
+                case 'versace':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'carolina herrera':
+                    window.location.href = 'carolinaherrera.html';
+                    break;
+                case 'paco rabanne':
+                    window.location.href = 'racorabbana.html';
+                    break;
+                case 'creed':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'chanel':
+                    window.location.href = 'chanelz.html';
+                    break;
+                case 'guerlain':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'dior':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'nina ricci':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'jean paul gaultier':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'vilhelm':
+                    window.location.href = 'velhelm.html';
+                    break;
+                case 'byredo':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'zara':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'le labo':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'tom ford':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'dolce & gabbana':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'ysl':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'bvlgari':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'one million':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'guilty':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case '212 vip':
+                    window.location.href = '212vip.html';
+                    break;
+                case 'dylan blue':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'aventus':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'no. 5':
+                    window.location.href = 'no5.html';
+                    break;
+                case 'shalimar':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'poison':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'l`air du temps':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'classique':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'dear polly':
+                    window.location.href = 'dearpolly.html';
+                    break;
+                case 'gypsy water':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'ebony wood':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'santal 33':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'neroli portofino':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'bleu':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'eros':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'light blue':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'black opium':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'invictus':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'black orchid':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'eau parfumee':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'muški':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'ženski':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                case 'akcije':
+                    window.location.href = 'prazniproizvodi.html';
+                    break;
+                default:
+                    window.location.href = 'prazniproizvodi.html';
+            }
+        }
+    });
+});
+	
+	
+	///////dodaj dugme
+
+
+
+function IzmenaDugme10() {
+    document.querySelector('.podaciProdavac').style.display = 'none';
+    document.querySelector('.podaciProizvoda12').style.display = 'block';
+}
+
+function claimOffer50() {
+  const element = document.querySelector('.podaciProizvoda12');
+  if (element) {
+    element.style.display = 'none';
+  }
+  document.querySelector('.podaciProdavac').style.display = 'block';
+}
+
+
+
+	/////prebacivanje informacija
+
+      document.getElementById('dugmeZadodavanjeVrednosti').onclick = function() {
+            document.getElementById('ime1000').innerText = 'Ime: ' + document.getElementById('imeProdavac').value;
+            document.getElementById('prezime1000').innerText = 'Prezime: ' + document.getElementById('przimeProdavac').value;
+            document.getElementById('brojtel1000').innerText = 'Broj telefona: ' + document.getElementById('brojtelProdavac').value;
+            document.getElementById('dgub1000').innerText = 'Država, grad, ulica i broj: ' + document.getElementById('dgubProdavac').value;
+            document.getElementById('pol1000').innerText = 'Pol: ' + document.getElementById('polProdavac').value;
+            document.getElementById('datumrod1000').innerText = 'Datum rođenja: ' + document.getElementById('datumrodProdavac').value;
+            document.cookie = 'ime=' + document.getElementById('imeProdavac').value;
+            document.cookie = 'prezime=' + document.getElementById('przimeProdavac').value;
+            document.cookie = 'brojtel=' + document.getElementById('brojtelProdavac').value;
+            document.cookie = 'dgub=' + document.getElementById('dgubProdavac').value;
+            document.cookie = 'pol=' + document.getElementById('polProdavac').value;
+            document.cookie = 'datumrod=' + document.getElementById('datumrodProdavac').value;
+        }
+	</script>
+
+</html>
